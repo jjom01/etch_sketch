@@ -6,7 +6,7 @@
     letter-spacing: -0.016em;
     min-width: 20px;
     padding: 8px 16px;
-    border-radius: 980px; /* Modern Apple buttons use a highly pill-shaped radius */
+    border-radius: 980px;
     border: none;
     cursor: pointer;
     text-align: center;
