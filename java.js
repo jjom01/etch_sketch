@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         newDiv.textContent = `#${i}`
         newDiv.style.textAlign = "center"
         newDiv.addEventListener("mouseover", () => {
+            newDiv.style.transitionDelay = "0s";
             newDiv.style.backgroundColor = "red";
         });
 
         newDiv.addEventListener("mouseout", () => {
+            newDiv.style.transitionDelay = "1s";
             newDiv.style.backgroundColor = "";
         })
         fragment.appendChild(newDiv)
