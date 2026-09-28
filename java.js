@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
         newDiv.style.border = "2px solid red"
         newDiv.textContent = `#${i}`
         newDiv.style.textAlign = "center"
+        newDiv.addEventListener("mouseover", () => {
+            newDiv.style.backgroundColor = "red";
+        });
+
+        newDiv.addEventListener("mouseout", () => {
+            newDiv.style.backgroundColor = "";
+        })
         fragment.appendChild(newDiv)
     }
     container.appendChild(fragment)
