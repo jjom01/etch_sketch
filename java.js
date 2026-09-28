@@ -1,3 +1,14 @@
+const gridSize = document.getElementById('gridSize');
+document.addEventListener('click', () =>{
+    let userInput = prompt ("How big should we make this canvas?", "between 1-100");
+    if ((userInput === null) || (userInput > 100) || (userInput < 1)) {
+        prompt ("We cannot use that as a canvas size. Try again", "between 1-100");
+    }
+    else {
+        return userInput;
+    }
+})
+
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
     container.style.justifyContent = "center";
