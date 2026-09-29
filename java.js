@@ -21,11 +21,11 @@ function buildGrid(size){
         box.style.textAlign = "center"
 
         box.addEventListener("mouseover", () => {
-            box.style.transitionDelay = "0s";
+            box.style.transition = "background-color 0s ease-in-out";
             box.style.backgroundColor = "red";
         });
         box.addEventListener("mouseout", () => {
-            box.style.transitionDelay = "1s";
+            box.style.transition = "background-color 0.8s ease-in-out";
             box.style.backgroundColor = "";
         })
         fragment.appendChild(box);
