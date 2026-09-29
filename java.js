@@ -17,7 +17,6 @@ function buildGrid(size){
         const box = document.createElement("div");
         box.className = "box"
         box.style.boxSizing = "border-box"
-        box.style.border = "1px solid red"
         box.style.textAlign = "center"
 
         box.addEventListener("mouseover", () => {
