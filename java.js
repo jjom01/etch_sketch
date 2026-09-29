@@ -5,6 +5,7 @@ function buildGrid(size){
     container.innerHTML = ""
     container.style.display = "grid"
     container.style.alignContent = "center"
+    /*container.style.borderRadius = "100px"(might fix this later lol)*/
     container.style.border = "1px solid red"
     container.style.width = "640px"
     container.style.height = "640px"
@@ -17,7 +18,6 @@ function buildGrid(size){
         box.className = "box"
         box.style.boxSizing = "border-box"
         box.style.border = "1px solid red"
-        box.textContent = `#${i}`
         box.style.textAlign = "center"
 
         box.addEventListener("mouseover", () => {
